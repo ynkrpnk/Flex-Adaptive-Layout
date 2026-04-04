@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#showcase {
+  min-height: 400px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+#showcase .bg-image {
+  background: url("../photo/0.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.content-wrap {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#showcase h1 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* SECTION A */
+
+#section-a {
+  background: #ddd;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#section-a .content-text {
+  columns: 2;
+  column-gap: 40px;
+}
+
+@media (max-width: 700px) {
+  #section-a .content-text {
+    columns: 1;
+  }
+}
+
+.content-title {
+  margin-bottom: 20px;
+}
+
+/* SECTION B */
+
+#section-b {
+  background: #333;
+  padding: 40px 20px;
+}
+
+#section-b ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  #section-b ul {
+    flex-direction: column;
+  }
+
+  .card img {
+    height: 150px;
+  }
+}
+
+.card {
+  background: #fff;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+/* SECTION C */
+
+#section-c {
+  background: #ddd;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* SECTION D */
+
+#section-d {
+  display: flex;
+}
+
+#section-d .box {
+  width: 50%;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
+}
+
+#section-d .box:last-child {
+  background: #333;
+}
+
+@media (max-width: 700px) {
+  #section-d {
+    flex-direction: column;
+  }
+
+  #section-d .box {
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+
+#main-footer {
+  display: flex;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#main-footer div {
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  #main-footer {
+    flex-direction: column;
+  }
+
+  #main-footer div {
+    width: 100%;
+  }
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
